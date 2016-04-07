@@ -1,0 +1,22 @@
+%h1 Categories
+
+#flash_messages= flash_messages(:close, :fade)
+
+= link_to "Add New Categories", new_category_path
+
+%br 
+%table
+	%thead
+		%th Image
+		%th Title
+		%th Actions
+	%tbody
+		- @categories.each do |category|
+			%tr
+				%td= image_tag category.image_url(:thumb)
+				%td= category.title
+
+				%td= link_to "Edit", edit_category_path(category)
+				%td= link_to "Delete", category_path(category),
+					data: { confirm: "Are you sure you want to delete #{category.title} category?" },
+					method: :delete

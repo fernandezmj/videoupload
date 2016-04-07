@@ -1,0 +1,12 @@
+%table
+  %thead
+    %tr
+      %th 
+        Thumbnail
+      %th 
+        Title
+      %th 
+        Body
+  %tbody
+    - @videos.each do |video|
+      =render 'video', video: video

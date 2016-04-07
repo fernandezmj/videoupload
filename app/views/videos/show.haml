@@ -1,0 +1,15 @@
+%h1 View Videos
+
+=link_to 'Upload New Videos', new_video_path
+
+%p Title: 
+=@video.title
+
+%p Video:
+=video_tag("#{@video.video_link_url()}",controls: true, type: "video")
+
+%p Body:
+=@video.description
+
+%p Tag:
+=@video.category.title

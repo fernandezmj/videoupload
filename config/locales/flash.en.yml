@@ -1,0 +1,50 @@
+en:
+  flash_messages:
+    categories:
+      create:
+        success: "Category Created."
+        error: "Category has not been created."
+      update:
+        success: "Category Updated"
+        error: "Category has not been updated"
+      destroy:
+        success: "Category Destroyed"
+        error: "Category has not been deleted"
+    headings:
+      success: "Success!"
+      info: "Info!"
+      warning: "Warning!"
+      error: "Error!"
+    #
+    # Add default flash messages:
+    # defaults:
+    #   success: "This is a notification"
+    #   error: "Something went wrong"
+    #   create:
+    #     success: "Successfully created!"
+    #     error: "Something went wrong. Please take a look at the form to see what went wrong."
+    #
+    # Add flash messages for controller actions:
+    # products:
+    #   create:
+    #     success: "This is a notification"
+    #     error: "Something went wrong"
+    #
+    # Inside controller:
+    # def create
+    #   flash!(:success, :error)
+    #   redirect_to(:root)
+    # end
+    #
+    # OR
+    # 
+    # def create
+    #   redirect_to(:root, :flash => [:success, :error])
+    # end
+    #
+    # OR
+    #
+    # def create
+    #   flash_now!(:success, :error)
+    #   render("new")
+    # end

@@ -1,0 +1,14 @@
+%tr
+  %td
+    = image_tag video.thumbnail_url(:thumb)
+  %td
+    = link_to video_path(video) do
+      = video.title 
+  %td
+    = video.description
+  %td
+    = link_to 'Edit', edit_video_path(video)
+  %td
+    = link_to "Delete", video_path(video),
+          data: { confirm: "Are you sure you want to delete #{video.title}" },
+          method: :delete
